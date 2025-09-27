@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 800px;
+    background: linear-gradient(45deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    margin: 100px auto 0;
+
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    flex: .9;
+    margin: 16px;
+}
+
+.search button {
+    border: none;
+    outline: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.weather {
+    display: none;
+}
+
+.temp {
+    font-size: 44px;
+}
+
+.city {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.col img {
+    height: 35px;
+}
+
+.col p {
+    font-size: 20px;
+}
+
+@media screen and (min-width:275px) and (max-width:425px) {
+    .card {
+        width: 270px;
+        padding: 40px 10px;
+    }
+
+    .search input {
+        padding: 8px;
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .search button {
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+    }
+
+    .temp {
+        font-size: 33px;
+    }
+
+    .city {
+        font-size: 33px;
+        margin-bottom: 30px;
+    }
+
+    .col img {
+        height: 25px;
+    }
+
+    .col p {
+        font-size: 14px;
+    }
+
+    .col {
+        gap: 5px;
+    }
+
+}
+@media  screen and (min-width:425px) and (max-width: 868px) {
+    .card{
+        width: 420px;
+
+    }
+}
+@media  screen and (min-width:868px) and (max-width: 1024px) {
+    .card{
+        width: 45%;
+
+    }
+}
